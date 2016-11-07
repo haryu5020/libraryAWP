@@ -2,7 +2,7 @@
     <head>
         <title>myLibrary</title>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/question.css">
         <link rel="stylesheet" href="css/join.css">
         <link rel="stylesheet" href="css/login.css">
         <!-- Latest compiled and minified CSS -->
@@ -38,43 +38,38 @@
             <div>찾아오시는길
             </div>
         </nav>
-        <section>
-            <header>신작도서</header>
-            <div>
-                <article class="new_book">
-                    <img src="img/new_book1.PNG">
-                    <div class="book_title">모던 웹을 위한 javascript, jquery입문</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book2.PNG">
-                    <div class="book_title">모던 웹을 위한 node.js프로그래밍</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book3.PNG">
-                    <div class="book_title">안드로이드 앱 프로그래밍</div>
-                </article>
-            </div>
-        </section>
         <div>
-            <div id="notice_header">
-                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                공지사항
+            최근 질문목록
+        </div>
+        <section id="question_list">
+            <div>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                <p>이번 달 도서관 휴무일은 언제인가요?</p>
+                <input type="button" value="답변확인">
             </div>
             <div>
-                <div class="notice_list">
-                    <p class="notice_title">휴관일 안내</p>
-                    <p class="notice_con">12월 휴관일 안내입니다. 12월은 24일, 25일 크리스마스 연휴로 이틀간 휴무 예정입니다.</p>
-                </div>
-                <div class="notice_list">
-                    <p class="notice_title">신작도서 입고일</p>
-                    <p class="notice_con"> 이번 신작도서는 모던웹을 위한 javascript, jquery 12월 5일 입고. 모던웹을 위한 node.js프로그래밍 12월 6일 입고 예정입니다.</p>
-                </div>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                <p>대출 연장을 신청하고 싶습니다.</p>
+                <input type="button" value="답변확인">
             </div>
-            <div id="notice_bottom">
-                더보기
-                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+            <div>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                <p>열람실에서 이어폰을 잃어버렸습니다. 어떻게 해야하나요?</p>
+                <input type="button" value="답변확인">
             </div>
-        </div>
+            <div>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                <p>신작 도서 신청을 하고싶습니다.</p>
+                <input type="button" value="답변확인">
+            </div>           
+        </section>
+        <section id="question_space">
+            <div>질문하기</div>
+            <label>제&nbsp;&nbsp;&nbsp;목</label>
+            <input type="text" value="제목을 입력해 주세요.">
+            <textarea>내용을 입력해 주세요.</textarea>
+            <input type="button" value="질문등록">
+        </section>
         <section id="login_modal">
             <div>
                 <div id="login_section">
@@ -131,10 +126,6 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/login_join.js"></script>

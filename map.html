@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
         <title>myLibrary</title>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="css/join.css">
         <link rel="stylesheet" href="css/login.css">
         <!-- Latest compiled and minified CSS -->
@@ -12,10 +17,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>      
+  </head>
+  <body>
+       <header>
             <img src="img/logo.png">
             <div>
                 <input type="button" value="회원가입" class="header_btn" id="join">
@@ -38,43 +43,12 @@
             <div>찾아오시는길
             </div>
         </nav>
-        <section>
-            <header>신작도서</header>
-            <div>
-                <article class="new_book">
-                    <img src="img/new_book1.PNG">
-                    <div class="book_title">모던 웹을 위한 javascript, jquery입문</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book2.PNG">
-                    <div class="book_title">모던 웹을 위한 node.js프로그래밍</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book3.PNG">
-                    <div class="book_title">안드로이드 앱 프로그래밍</div>
-                </article>
-            </div>
-        </section>
         <div>
-            <div id="notice_header">
-                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                공지사항
-            </div>
-            <div>
-                <div class="notice_list">
-                    <p class="notice_title">휴관일 안내</p>
-                    <p class="notice_con">12월 휴관일 안내입니다. 12월은 24일, 25일 크리스마스 연휴로 이틀간 휴무 예정입니다.</p>
-                </div>
-                <div class="notice_list">
-                    <p class="notice_title">신작도서 입고일</p>
-                    <p class="notice_con"> 이번 신작도서는 모던웹을 위한 javascript, jquery 12월 5일 입고. 모던웹을 위한 node.js프로그래밍 12월 6일 입고 예정입니다.</p>
-                </div>
-            </div>
-            <div id="notice_bottom">
-                더보기
-                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-            </div>
+            찾아오시는길
         </div>
+        <section id="con">
+            <div id="map"></div>
+        </section>
         <section id="login_modal">
             <div>
                 <div id="login_section">
@@ -131,12 +105,29 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
+    <script type="text/javascript">
+
+    function initMap() {
+      var myLatLng = {lat:37.631953, lng:127.077841};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyef3XjVhDA-2ArAmPBv_a-lfHDWaXOeQ&callback=initMap">
+    </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/common.js"></script>
-        <script src="js/login_join.js"></script>
-    </body>
+        <script src="js/login_join.js"></script>  
+  </body>
 </html>

@@ -2,7 +2,7 @@
     <head>
         <title>myLibrary</title>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/book_detail.css">
         <link rel="stylesheet" href="css/join.css">
         <link rel="stylesheet" href="css/login.css">
         <!-- Latest compiled and minified CSS -->
@@ -38,43 +38,36 @@
             <div>찾아오시는길
             </div>
         </nav>
-        <section>
-            <header>신작도서</header>
-            <div>
-                <article class="new_book">
-                    <img src="img/new_book1.PNG">
-                    <div class="book_title">모던 웹을 위한 javascript, jquery입문</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book2.PNG">
-                    <div class="book_title">모던 웹을 위한 node.js프로그래밍</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book3.PNG">
-                    <div class="book_title">안드로이드 앱 프로그래밍</div>
-                </article>
+        <div>
+            도서소개
+        </div>
+        <section id="book_detail">
+            <div id="book_detail_left">
+                <img src="img/new_book1.PNG">
+                <p>모던 웹을 위한 javascript, jquery 입문</p>
+            </div>
+            <div id="book_detail_right">
+                <div>
+                    <label>저자  </label>
+                    <p>윤인성</p>
+                </div>
+                <div>
+                    <label>출판사  </label>
+                    <p>한빛미디어</p>
+                </div>
+                <label>책 소개 </label>
+                <p>『JAVASCRIPT JQUERY 입문』은 이미지와 텍스트를 보여주는 단순한 웹 페이지가 아닌 웹 애플리케이션을 개발해야 하는 시대의 흐름에 맞춰 내용을 전면 재구성한 책이다. 트위터, 페이스북과 같은 웹 애플리케이션 개발이나 스마트폰을 위한 모바일 웹 앱 제작에 필요한 자바스크립트 기술을 단 한 권에 모두 담았다.</p>
+                <div>
+                    <label>재고수량  </label>
+                    <p>3</p>
+                </div>
+                <div>
+                    <label>재고위치  </label>
+                    <p id="stock_place">A-16, H-7, K-14</p>
+                    <input type="button" value="예약하기">
+                </div>
             </div>
         </section>
-        <div>
-            <div id="notice_header">
-                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                공지사항
-            </div>
-            <div>
-                <div class="notice_list">
-                    <p class="notice_title">휴관일 안내</p>
-                    <p class="notice_con">12월 휴관일 안내입니다. 12월은 24일, 25일 크리스마스 연휴로 이틀간 휴무 예정입니다.</p>
-                </div>
-                <div class="notice_list">
-                    <p class="notice_title">신작도서 입고일</p>
-                    <p class="notice_con"> 이번 신작도서는 모던웹을 위한 javascript, jquery 12월 5일 입고. 모던웹을 위한 node.js프로그래밍 12월 6일 입고 예정입니다.</p>
-                </div>
-            </div>
-            <div id="notice_bottom">
-                더보기
-                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-            </div>
-        </div>
         <section id="login_modal">
             <div>
                 <div id="login_section">
@@ -131,10 +124,6 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/login_join.js"></script>

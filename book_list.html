@@ -2,7 +2,7 @@
     <head>
         <title>myLibrary</title>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/book_list.css">
         <link rel="stylesheet" href="css/join.css">
         <link rel="stylesheet" href="css/login.css">
         <!-- Latest compiled and minified CSS -->
@@ -38,43 +38,71 @@
             <div>찾아오시는길
             </div>
         </nav>
-        <section>
-            <header>신작도서</header>
-            <div>
-                <article class="new_book">
-                    <img src="img/new_book1.PNG">
-                    <div class="book_title">모던 웹을 위한 javascript, jquery입문</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book2.PNG">
-                    <div class="book_title">모던 웹을 위한 node.js프로그래밍</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book3.PNG">
-                    <div class="book_title">안드로이드 앱 프로그래밍</div>
-                </article>
-            </div>
-        </section>
         <div>
-            <div id="notice_header">
-                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                공지사항
-            </div>
-            <div>
-                <div class="notice_list">
-                    <p class="notice_title">휴관일 안내</p>
-                    <p class="notice_con">12월 휴관일 안내입니다. 12월은 24일, 25일 크리스마스 연휴로 이틀간 휴무 예정입니다.</p>
-                </div>
-                <div class="notice_list">
-                    <p class="notice_title">신작도서 입고일</p>
-                    <p class="notice_con"> 이번 신작도서는 모던웹을 위한 javascript, jquery 12월 5일 입고. 모던웹을 위한 node.js프로그래밍 12월 6일 입고 예정입니다.</p>
-                </div>
-            </div>
-            <div id="notice_bottom">
-                더보기
-                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-            </div>
+            도서리스트
         </div>
+        <section id="book_list">
+            <article>
+                <div>
+                    <img src="img/new_book1.PNG">
+                    <p>모던 웹을 위한 javascript, jquery 입문</p>
+                </div>
+                <div>
+                    <img src="img/new_book2.PNG">
+                    <p>모던 웹을 위한 node.js 입문</p>
+                </div>
+                <div>
+                    <img src="img/book/book1.PNG">
+                    <p>이것이 자바다</p>
+                </div>
+                <div>
+                    <img src="img/book/book2.PNG">
+                    <p>핀테크 세상을 열다</p>
+                </div>
+                <div>
+                    <img src="img/book/book3.PNG">
+                    <p>안드로이드 프로그래밍 정복 1</p>
+                </div>   
+            </article>
+            <article>
+                <div>
+                    <img src="img/new_book1.PNG">
+                    <p>모던 웹을 위한 javascript, jquery 입문</p>
+                </div>
+                <div>
+                    <img src="img/new_book2.PNG">
+                    <p>모던 웹을 위한 node.js 입문</p>
+                </div>
+                <div>
+                    <img src="img/book/book1.PNG">
+                    <p>이것이 자바다</p>
+                </div>
+                <div>
+                    <img src="img/book/book2.PNG">
+                    <p>핀테크 세상을 열다</p>
+                </div>
+                <div>
+                    <img src="img/book/book3.PNG">
+                    <p>안드로이드 프로그래밍 정복 1</p>
+                </div>   
+            </article>
+            <article>
+                <div>
+                    <img src="img/new_book3.PNG">
+                    <p>안드로이드 앱 프로그래밍</p>
+                </div> 
+                <div>
+                    <img src="img/book/book4.PNG">
+                    <p>전투 육아</p>
+                </div>  
+                <div>
+                </div>
+                <div>
+                </div>  
+                <div>
+                </div>  
+            </article>
+        </section>
         <section id="login_modal">
             <div>
                 <div id="login_section">
@@ -131,12 +159,9 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/login_join.js"></script>
+        <script src="js/book_list.js"></script>
     </body>
 </html>
