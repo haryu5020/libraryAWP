@@ -18,7 +18,7 @@
             })
             $('#login_bottom > input:odd, #join_bottom > input:odd').mouseover(function(){
                 $(this).css("background-image", "none");
-                $(this).css("background-color", "e84747");
+                $(this).css("background-color", "#e84747");
                 $(this).css("border", "0px");
                 $(this).css("color", "#fff");
             })
@@ -34,3 +34,21 @@
                 $("#join_modal").css("display", "none");
             })
           
+$("#login_btn").click(function(){
+
+    if($("#id_put").val()=='admin'){
+        if($("#pw_put").val()=='1234'){
+            console.log("login");
+            $(location).attr('href', 'manage_main.html');
+        }
+    }
+})
+
+$("#id_put").click(function(){
+    $("#id_put").val(' ');
+})
+$("#join_section > div > input[type='text']").click(function(){
+    $(this).val(' ');
+})
+            
+            
