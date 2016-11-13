@@ -28,5 +28,8 @@
             $("#n_nav").click(function(){
                 $(location).attr('href', 'notice.html');
             })
+            $("#map_nav").click(function(){
+                $(location).attr('href', 'map.html');
+            })
 
             
