@@ -2,7 +2,7 @@
     <head>
         <title>myLibrary</title>
         <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/reading_room.css">
         <link rel="stylesheet" href="css/join.css">
         <link rel="stylesheet" href="css/login.css">
         <!-- Latest compiled and minified CSS -->
@@ -38,60 +38,14 @@
             <div id="map_nav">찾아오시는길
             </div>
         </nav>
-        <section>
-            <header>신작도서</header>
-            <div>
-                <article class="new_book">
-                    <img src="img/new_book1.PNG">
-                    <div class="book_title">모던 웹을 위한 javascript, jquery입문</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book2.PNG">
-                    <div class="book_title">모던 웹을 위한 node.js프로그래밍</div>
-                </article>
-                <article class="new_book">
-                    <img src="img/new_book3.PNG">
-                    <div class="book_title">안드로이드 앱 프로그래밍</div>
-                </article>
-            </div>
-        </section>
         <div>
-            <div id="notice_header">
-                <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                공지사항
-            </div>
-            <div>
-                <div class="notice_list">
-                    <p class="notice_title">휴관일 안내</p>
-                    <p class="notice_con">12월 휴관일 안내입니다. 12월은 24일, 25일 크리스마스 연휴로 이틀간 휴무 예정입니다.</p>
-                </div>
-                <div class="notice_list">
-                    <p class="notice_title">신작도서 입고일</p>
-                    <p class="notice_con"> 이번 신작도서는 모던웹을 위한 javascript, jquery 12월 5일 입고. 모던웹을 위한 node.js프로그래밍 12월 6일 입고 예정입니다.</p>
-                </div>
-            </div>
-            <div id="notice_bottom">
-                더보기
-                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-            </div>
+            열람실
         </div>
-        <section id="login_modal">
-            <div>
-                <div id="login_section">
-                    <h3>로그인</h3>
-                    <div>
-                        <label>아이디</label>
-                        <input type="text" value="아이디를 입력해 주세요." id="id_put">
-                    </div>
-                    <div>
-                        <label>비밀번호</label>
-                        <input type="password" id="pw_put">
-                    </div>
-                </div>
-                <div id="login_bottom">
-                    <input type="button" value="로그인" id="login_btn">
-                    <input type="button" value="닫기" id="login_close">
-                </div>
+        <section id = "reading_room">
+            <input type="button" value = "제 1 열람실" class="reading_room_btn" id="first_room">
+            <input type="button" value = "제 2 열람실" class="reading_room_btn" id="second_room">
+            <div id = "reading_seat_first">
+                
             </div>
         </section>
         <section id="join_modal">
@@ -131,10 +85,6 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/login_join.js"></script>
