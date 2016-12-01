@@ -4,21 +4,21 @@ body{
     font-family: 'Nanum Pen Script', cursive !important;
 }
 
-body > header{
+body > header >header{
     width:100vw;
     height:30vh;
     background-image:url("../img/header_back.png");
     background-size: 20% 95%;
     background-repeat: no-repeat;
 }
-body > header > img{
+body > header > header > img{
     width:14vw;
     height:38%;
     margin-top:3%;
     margin-left:10%;
     cursor:pointer;
 }
-body > header > div{
+body > header > header> div{
     width:30%;
     float:right;
     clear:both;
@@ -47,7 +47,7 @@ body > header > div{
     margin-top:25%;
     width:10%;
 }
-nav{
+header >nav{
     width:15%;
     height:60%;
     margin-left:3%;
@@ -55,7 +55,7 @@ nav{
     background-color:#fff5d2;
     float:left;
 }
-nav > div{
+header > nav > div{
     width:90%;
     height:10%;
     margin-left:5%;
