@@ -1,0 +1,13 @@
+CREATE TABLE BOOK
+	(b_no varchar2(10) Not null, 
+	 b_name varchar2(40) Not null, 
+	 b_author varchar2(10) Not null,
+	 b_publisher varchar2(10) Not null,
+	 b_location varchar2(10) Not null,
+	 b_checkOut char(1) Not null,
+	 b_stockNumber number);
+
+INSERT INTO BOOK VALUES(0000, '라푼젤', '이나라', '한빛', 'A03', 'F', 3);
+INSERT INTO BOOK VALUES(0001, '백설공주', '도레미', '교보문고', 'B03', 'T', 2);
+INSERT INTO BOOK VALUES(0002, '신데렐라', '한강', '위키북스', 'A04', 'F', 1);
+INSERT INTO BOOK VALUES(0003, '피터팬', '홍길동', '제이펍', 'C01', 'F', 0);

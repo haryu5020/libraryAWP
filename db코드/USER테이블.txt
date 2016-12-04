@@ -1,0 +1,10 @@
+CREATE TABLE USER
+	(u_no varchar2(10) not null,
+	 u_name varchar2(20) not null,
+	 u_addr varchar2(40) not null,
+	 u_phone varchar2(11) not null);
+
+INSERT INTO USER VALUES(000, '이하니', '서울시 노원구', '01020580000');
+INSERT INTO USER VALUES(001, '무지', '경기도 남양주', '01011112222');
+INSERT INTO USER VALUES(002, '라이언', '대전광역시', '01033334444');
+INSERT INTO USER VALUES(003, '피치', '서울시 노원구', '01055556666');
