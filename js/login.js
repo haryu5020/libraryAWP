@@ -28,16 +28,23 @@ $('#login_bottom > input:odd').mouseout(function(){
                 $(this).css("color", "#000");
 });
 
+
+$("#id_put").click(function(){
+    $("#id_put").val('');
+})
+
 $("#login_btn").click(function(){
 
     if($("#id_put").val()=='admin'){
         if($("#pw_put").val()=='1234'){
-            console.log("login");
+
+            alert("관리자님 환영합니다!");
             $(location).attr('href', 'manage_main.html');
         }
+    }else if($("#id_put").val()==''){
+        alert("아이디를 입력해주세요.");
+    }else if($("#pw_put").val()==''){
+        alert("비밀번호를 입력해주세요.");
     }
-})
 
-$("#id_put").click(function(){
-    $("#id_put").val(' ');
 })

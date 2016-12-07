@@ -28,5 +28,14 @@ $('#join_bottom > input:odd').mouseout(function(){
                 $(this).css("color", "#000");
 });
 $("#join_section > div > input[type='text']").click(function(){
-    $(this).val(' ');
+    $(this).val('');
+});
+
+$('#submit_btn').click(function(){
+
+    if($("#jid_put").val()==''){
+        alert("아이디는 필수입니다.");
+    }else if($("#jpw_put").val()!=$("#jpw_put_ck").val()){
+        alert("비밀번호와 확인이 일치하지 않습니다.");
+    }
 })
