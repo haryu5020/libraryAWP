@@ -17,6 +17,29 @@
     </head>
     <body>
         <header>
+            <header>
+            <img src="img/logo.png">
+            <div>
+                <input type="button" value="회원가입" class="header_btn" id="join">
+                <input type="button" value="로그인" class="header_btn" id="login">
+            </div>
+            <div>
+                <input type="button" value="검색" class="header_btn" id="serch_btn">
+                <input type="text" value="검색어를 입력하시오." id="serch_in">
+            </div>
+            </header>
+        <nav>
+            <div id="b_nav">도서리스트
+            </div>
+            <div id="r_nav">열람실
+            </div>
+            <div id="q_nav">질문하기
+            </div>
+            <div id="n_nav">공지사항
+            </div>
+            <div id="map_nav">찾아오시는길
+            </div>
+        </nav>
         </header>
         <section>
             <header>신작도서</header>
@@ -56,8 +79,62 @@
             </div>
         </div>
         <section id="login_modal">
+            <div>
+                <div id="login_section">
+                    <h3>로그인</h3>
+                    <div>
+                        <label>아이디</label>
+                        <input type="text" value="아이디를 입력해 주세요." id="id_put">
+                    </div>
+                    <div>
+                        <label>비밀번호</label>
+                        <input type="password" id="pw_put">
+                    </div>
+                </div>
+                <div id="login_bottom">
+                    <input type="button" value="로그인" id="login_btn">
+                    <input type="button" value="닫기" id="login_close">
+                </div>
+            </div>
+<script src="js/login.js"></script>            
         </section>
         <section id="join_modal">
+            <div>
+                <div id="join_section">
+                    <h3>회원가입</h3>
+                    <div>
+                        <label>아이디</label>
+                        <input type="text" style="width:50%;" value="아이디" id="jid_put">
+                        <input type="button" value="중복확인" id="id_check">
+                    </div>
+                    <div>
+                        <label>비밀번호</label>
+                        <input type="password" id="jpw_put">
+                    </div>
+                    <div>
+                        <label>비밀번호 확인</label>
+                        <input type="password" id="jpw_put_ck">
+                    </div>
+                    <div>
+                        <label>이름</label>
+                        <input type="text" value="이름">
+                    </div>
+                    <div>
+                        <label>전화번호</label>
+                        <input type="text" value="전화번호">
+                        <p>* 전화번호는 - 없이 입력해 주세요.</p>
+                    </div>
+                    <div>
+                        <label>주소</label>
+                        <input type="text" value="주소">
+                    </div>
+                </div>
+                <div id="join_bottom">
+                    <input type="submit" value="회원가입" id="submit_btn">
+                    <input type="button" value="닫기" id="join_close">
+                </div>
+            </div>
+<script src="js/join.js"></script>
         </section>
         
         <script src="js/common.js"></script>
